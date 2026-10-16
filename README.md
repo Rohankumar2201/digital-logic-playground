@@ -2,9 +2,9 @@
 
 An interactive, in-browser digital logic simulator. Drag gates, flip-flops and building blocks onto a canvas, wire them together, flip switches, run a clock, and watch signals propagate live. No backend, no account, everything runs in your browser.
 
-**Live demo:** https://your-deployment-url-here
+**Live demo:** https://digital-logic-playground.vercel.app/
 
-![Screenshot](docs/screenshot.png)
+
 
 ## Features
 
@@ -114,14 +114,7 @@ It is a static site. `npm run build` produces `dist/`, which can be hosted on Ve
 
 Browser-saved circuits live in `localStorage`, so they are per browser and per domain. Use Export and Import to move circuits between machines.
 
-## Roadmap
 
-Ideas under consideration, in no particular order:
-
-- Waveform / timing view
-- Reusable subcircuits
-- Verilog and testbench export
-- Challenge mode
 
 ## Contributing
 
