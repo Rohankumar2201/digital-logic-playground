@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f4f5f7; --pn: #fff; --bd: #d4d8de; --tx: #1d2430; --mu: #6b7685; --gr: #d6dae1;
+  --hi: #0a9d62; --lo: #8b94a2; --sel: #c98a00; --bad: #d6302f; --blk: #fff;
+}
+.dark {
+  --bg: #14171c; --pn: #1b1f26; --bd: #2b313b; --tx: #d5dae1; --mu: #7d8795; --gr: #2d343f;
+  --hi: #3ddc97; --lo: #5b6573; --sel: #f0b429; --bad: #ff5c5c; --blk: #202630;
+}
+html, body, #root { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--tx); font: 13px system-ui, sans-serif; }
+
+.btn, .field { font: inherit; color: var(--tx); background: var(--pn); border: 1px solid var(--bd); border-radius: 3px; padding: 3px 8px; }
+.btn { cursor: pointer; }
+.btn:hover { border-color: var(--mu); }
+.mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+table.tt { border-collapse: collapse; margin-top: 6px; font: 12px ui-monospace, monospace; }
+.tt td, .tt th { border: 1px solid var(--bd); padding: 1px 6px; text-align: center; }
+.tt tr.cur td { background: var(--hi); color: #fff; }
+
+.blk { fill: var(--blk); stroke: var(--mu); stroke-width: 1.5; }
+.blk.sel { stroke: var(--sel); stroke-width: 2.5; }
+.lbl { fill: var(--tx); font: 600 12px ui-monospace, monospace; text-anchor: middle; }
+.nm { fill: var(--mu); font: 11px ui-monospace, monospace; }
+.pl { fill: var(--mu); font: 9px ui-monospace, monospace; }
+.big { fill: var(--lo); font: 700 18px ui-monospace, monospace; text-anchor: middle; }
+.big.hi { fill: var(--hi); }
+.led { fill: none; stroke: var(--lo); stroke-width: 2; }
+.led.hi { fill: var(--hi); stroke: var(--hi); }
+.pin { fill: var(--bg); stroke: var(--lo); stroke-width: 2; }
+.pin.hi { fill: var(--hi); stroke: var(--hi); }
+.pin.ok { stroke: var(--hi); stroke-width: 4; }
+.pin.bad { stroke: var(--bad); stroke-width: 4; }
+.w { fill: none; stroke: var(--lo); stroke-width: 2; }
+.w.hi { stroke: var(--hi); }
+.w.sel { stroke: var(--sel); stroke-width: 3.5; }
+.w.tmp { stroke-dasharray: 5 4; }
+.w.tmp.ok { stroke: var(--hi); }
+.w.tmp.bad { stroke: var(--bad); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
